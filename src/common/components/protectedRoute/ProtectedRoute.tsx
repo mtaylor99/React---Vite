@@ -2,7 +2,7 @@ import { useAuth } from 'oidc-react';
 import { Outlet } from 'react-router-dom';
 
 import { useCurrentUserPermissions } from '../../../hooks/useCurrentUserPermissions';
-import { NoPermissionsPage } from '../../../pages/noPermissionsPage/NoPermissionsPage';
+import { NoPermissionsPage } from '../../../pages/Status/noPermissionsPage/NoPermissionsPage';
 import { UserPermissions } from '../../../types/userPermissions';
 
 export interface IProtectedRouteProps {
