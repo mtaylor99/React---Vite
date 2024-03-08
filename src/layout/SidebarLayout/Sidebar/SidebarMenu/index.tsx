@@ -5,7 +5,6 @@ import CameraFrontTwoToneIcon from '@mui/icons-material/CameraFrontTwoTone';
 import CheckBoxTwoToneIcon from '@mui/icons-material/CheckBoxTwoTone';
 import DesignServicesTwoToneIcon from '@mui/icons-material/DesignServicesTwoTone';
 import DisplaySettingsTwoToneIcon from '@mui/icons-material/DisplaySettingsTwoTone';
-import MmsTwoToneIcon from '@mui/icons-material/MmsTwoTone';
 import {
   Box,
   Button,
@@ -204,17 +203,6 @@ function SidebarMenu() {
                   Cryptocurrency
                 </Button>
               </ListItem>
-              <ListItem component="div">
-                <Button
-                  disableRipple
-                  component={RouterLink}
-                  onClick={closeSidebar}
-                  to="/dashboards/messenger"
-                  startIcon={<MmsTwoToneIcon />}
-                >
-                  Messenger
-                </Button>
-              </ListItem>
             </List>
           </SubMenuWrapper>
         </List>
@@ -264,6 +252,17 @@ function SidebarMenu() {
         >
           <SubMenuWrapper>
             <List component="div">
+            <ListItem component="div">
+                <Button
+                  disableRipple
+                  component={RouterLink}
+                  onClick={closeSidebar}
+                  to="/accessDenied"
+                  startIcon={<CheckBoxTwoToneIcon />}
+                >
+                  Access Denied
+                </Button>
+              </ListItem>
               <ListItem component="div">
                 <Button
                   disableRipple

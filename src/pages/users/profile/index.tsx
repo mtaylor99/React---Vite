@@ -1,7 +1,4 @@
-import Footer from 'src/components/Footer';
-
 import { Container, Grid, Typography } from '@mui/material';
-
 import Addresses from './Addresses';
 import Feed from './Feed';
 import MyCards from './MyCards';
@@ -53,7 +50,6 @@ function ManagementUserProfile() {
           </Grid>
         </Grid>
       </Container>
-      <Footer />
     </>
   );
 }

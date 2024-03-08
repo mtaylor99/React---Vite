@@ -13,15 +13,15 @@ export function AppContext() {
 
   return (
     <>
-      <h1>Access Token</h1>
+      <h3>Access Token</h3>
       <Box component="div" sx={{ wordWrap: 'break-word' }}>
         {authContext.userData?.access_token}
       </Box>
-      <h1>Given Name</h1>
+      <h3>Given Name</h3>
       <Box component="div" sx={{ wordWrap: 'break-word' }}>
         {authContext.userData?.profile.given_name}
       </Box>
-      <h1>Family Name</h1>
+      <h3>Family Name</h3>
       <Box component="div" sx={{ wordWrap: 'break-word' }}>
         {authContext.userData?.profile.family_name}
       </Box>
