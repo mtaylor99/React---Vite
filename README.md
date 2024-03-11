@@ -5,31 +5,37 @@
 This project has been created as a starting point for new project. It has the following tools installed and setup:-
 
 ## Next Steps
-  - Copy project into new folder for the new project
-  - Change the IDP scope setting in tokenUtils.ts - getMockDecodedToken
-  - Replace weatherForecastApi with your first API
-  - Remove MyAccordion if decided not to do snapshot testing, or when your first snapshot test developed
+
+- Copy project into new folder for the new project
+- Change the IDP scope setting in tokenUtils.ts - getMockDecodedToken
+- Replace weatherForecastApi with your first API
+- Remove MyAccordion if decided not to do snapshot testing, or when your first snapshot test developed
 
 ## Build Tool
-  - Vite https://vitejs.dev/
+
+- Vite https://vitejs.dev/
 
 ## Development Tools
-  - Redux Toolkit https://redux-toolkit.js.org/
-  - RTK Query (API handling) https://redux-toolkit.js.org/rtk-query/overview
+
+- Redux Toolkit https://redux-toolkit.js.org/
+- RTK Query (API handling) https://redux-toolkit.js.org/rtk-query/overview
 
 ## Authentication
-  - OIDC https://www.npmjs.com/package/oidc-react
+
+- OIDC https://www.npmjs.com/package/oidc-react
 
 ## Test Tools
-  - Vitest https://vitest.dev/
-  - Cypress https://docs.cypress.io/guides/overview/why-cypress
-  - Mock Service Worker https://mswjs.io/docs/
-  - ViTest UI - https://vitest.dev/guide/ui.html
-  - Code Coverage
+
+- Vitest https://vitest.dev/
+- Cypress https://docs.cypress.io/guides/overview/why-cypress
+- Mock Service Worker https://mswjs.io/docs/
+- ViTest UI - https://vitest.dev/guide/ui.html
+- Code Coverage
 
 ## UI Components
-  - Material UI including Themeing https://mui.com/
-  - Storybook https://storybook.js.org/
+
+- Material UI including Themeing https://mui.com/
+- Storybook https://storybook.js.org/
 
 ### Project Installation
 

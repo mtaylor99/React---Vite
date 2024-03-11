@@ -1,23 +1,23 @@
-import { ChangeEvent, useState } from 'react';
+import AddTwoToneIcon from '@mui/icons-material/AddTwoTone';
+import DeleteTwoToneIcon from '@mui/icons-material/DeleteTwoTone';
 import {
+  Avatar,
   Box,
-  Grid,
-  Radio,
-  FormControlLabel,
-  Typography,
   Card,
-  CardHeader,
-  Divider,
-  lighten,
   CardActionArea,
   CardContent,
-  Tooltip,
+  CardHeader,
+  Divider,
+  FormControlLabel,
+  Grid,
   IconButton,
-  Avatar,
-  styled
+  Radio,
+  Tooltip,
+  Typography,
+  lighten,
+  styled,
 } from '@mui/material';
-import DeleteTwoToneIcon from '@mui/icons-material/DeleteTwoTone';
-import AddTwoToneIcon from '@mui/icons-material/AddTwoTone';
+import { ChangeEvent, useState } from 'react';
 
 const AvatarAddWrapper = styled(Avatar)(
   ({ theme }) => `
@@ -82,9 +82,9 @@ const CardCc = styled(Card)(
 `
 );
 
-function MyCards() {
+export function MyCards() {
   const data = {
-    savedCards: 7
+    savedCards: 7,
   };
 
   const [selectedValue, setSelectedValue] = useState('a');
@@ -93,7 +93,7 @@ function MyCards() {
     setSelectedValue(event.target.value);
   };
 
-  const handleDelete = () => { };
+  const handleDelete = () => {};
 
   return (
     <Card>
@@ -211,5 +211,3 @@ function MyCards() {
     </Card>
   );
 }
-
-export default MyCards;

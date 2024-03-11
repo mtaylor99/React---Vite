@@ -1,16 +1,16 @@
 import {
+  Avatar,
   Box,
-  Typography,
   Card,
   CardHeader,
   Divider,
-  Avatar,
-  useTheme,
+  Typography,
   styled,
+  useTheme,
 } from '@mui/material';
 
-import ShoppingBagTwoToneIcon from '@mui/icons-material/ShoppingBagTwoTone';
 import FavoriteTwoToneIcon from '@mui/icons-material/FavoriteTwoTone';
+import ShoppingBagTwoToneIcon from '@mui/icons-material/ShoppingBagTwoTone';
 import StarTwoToneIcon from '@mui/icons-material/StarTwoTone';
 
 const AvatarPrimary = styled(Avatar)(
@@ -22,7 +22,7 @@ const AvatarPrimary = styled(Avatar)(
 `
 );
 
-function RecentActivity() {
+export function RecentActivity() {
   const theme = useTheme();
 
   return (
@@ -127,5 +127,3 @@ function RecentActivity() {
     </Card>
   );
 }
-
-export default RecentActivity;

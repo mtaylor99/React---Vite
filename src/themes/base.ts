@@ -1,5 +1,5 @@
-import React from 'react';
 import { Theme } from '@mui/material';
+import React from 'react';
 import { PureLightTheme } from './schemes/PureLightTheme';
 
 export function themeCreator(theme: string): Theme {
@@ -247,5 +247,5 @@ declare module '@mui/material/styles' {
 }
 
 const themeMap: { [key: string]: Theme } = {
-  PureLightTheme
+  PureLightTheme,
 };

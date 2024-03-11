@@ -15,7 +15,7 @@ const MainContent = styled(Box)(
 `
 );
 
-function Status404() {
+export function Status404() {
   return (
     <>
       <MainContent>
@@ -40,5 +40,3 @@ function Status404() {
     </>
   );
 }
-
-export default Status404;

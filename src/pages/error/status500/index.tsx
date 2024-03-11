@@ -15,7 +15,7 @@ const MainContent = styled(Box)(
 `
 );
 
-function Status500() {
+export function Status500() {
   return (
     <>
       <MainContent>
@@ -43,5 +43,3 @@ function Status500() {
     </>
   );
 }
-
-export default Status500;

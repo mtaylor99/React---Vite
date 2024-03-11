@@ -5,10 +5,10 @@ import React, { useEffect, useState } from 'react';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import { App } from './App';
+import { SidebarProvider } from './layout/SidebarLayout/Sidebar/SidebarContext';
 import { store } from './state/store';
 import { themeCreator } from './themes/base';
 import { getMockDecodedToken } from './utils/tokenUtils';
-import { SidebarProvider } from './layout/SidebarLayout/Sidebar/SidebarContext';
 
 export const ColorModeContext = React.createContext({
   toggleColorMode: () => {},

@@ -1,5 +1,3 @@
-import { weatherForecastHandlers } from "./weatherForecastHandlers";
+import { weatherForecastHandlers } from './weatherForecastHandlers';
 
-export const handlers = [
-  ...weatherForecastHandlers,
-];
+export const handlers = [...weatherForecastHandlers];

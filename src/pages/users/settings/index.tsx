@@ -1,11 +1,11 @@
+import { PageTitleWrapper } from '@PROJECT/components/PageTitleWrapper';
 import { Container, Grid, Tab, Tabs, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { ChangeEvent, useState } from 'react';
-import PageTitleWrapper from 'src/components/PageTitleWrapper';
-import PageHeader from './PageHeader';
-import EditProfileTab from './EditProfileTab';
-import NotificationsTab from './NotificationsTab';
-import SecurityTab from './SecurityTab';
+import { EditProfileTab } from './EditProfileTab';
+import { NotificationsTab } from './NotificationsTab';
+import { PageHeader } from './PageHeader';
+import { SecurityTab } from './SecurityTab';
 
 const TabsWrapper = styled(Tabs)(
   () => `
@@ -15,7 +15,7 @@ const TabsWrapper = styled(Tabs)(
 `
 );
 
-function ManagementUserSettings() {
+export function ManagementUserSettings() {
   const [currentTab, setCurrentTab] = useState<string>('edit_profile');
 
   const tabs = [
@@ -24,7 +24,10 @@ function ManagementUserSettings() {
     { value: 'security', label: 'Passwords/Security' },
   ];
 
-  const handleTabsChange = (_event: ChangeEvent<object>, value: string): void => {
+  const handleTabsChange = (
+    _event: ChangeEvent<object>,
+    value: string
+  ): void => {
     setCurrentTab(value);
   };
 
@@ -66,5 +69,3 @@ function ManagementUserSettings() {
     </>
   );
 }
-
-export default ManagementUserSettings;

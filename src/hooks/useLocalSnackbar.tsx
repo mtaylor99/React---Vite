@@ -1,6 +1,6 @@
 import CancelIcon from '@mui/icons-material/Cancel';
 import { Button } from '@mui/material';
-import { useSnackbar, OptionsObject, SnackbarKey } from 'notistack';
+import { OptionsObject, SnackbarKey, useSnackbar } from 'notistack';
 
 const defaultSnackbarOptions: OptionsObject = {
   autoHideDuration: 5000,

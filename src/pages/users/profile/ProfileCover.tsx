@@ -1,22 +1,22 @@
 import {
-  Box,
-  Typography,
-  Card,
-  Tooltip,
   Avatar,
-  CardMedia,
+  Box,
   Button,
-  IconButton
+  Card,
+  CardMedia,
+  IconButton,
+  Tooltip,
+  Typography,
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
 import ArrowBackTwoToneIcon from '@mui/icons-material/ArrowBackTwoTone';
 import ArrowForwardTwoToneIcon from '@mui/icons-material/ArrowForwardTwoTone';
-import UploadTwoToneIcon from '@mui/icons-material/UploadTwoTone';
 import MoreHorizTwoToneIcon from '@mui/icons-material/MoreHorizTwoTone';
+import UploadTwoToneIcon from '@mui/icons-material/UploadTwoTone';
 
-interface ProfileCoverProps {
-  savedCards: 7,
+interface IProfileCoverProps {
+  savedCards: 7;
   name: string;
   coverImg: string;
   avatar: string;
@@ -27,7 +27,7 @@ interface ProfileCoverProps {
 }
 
 const Input = styled('input')({
-  display: 'none'
+  display: 'none',
 });
 
 const AvatarWrapper = styled(Card)(
@@ -88,7 +88,7 @@ const CardCoverAction = styled(Box)(
 `
 );
 
-const ProfileCover = ({ ...user }:ProfileCoverProps) => {
+export function ProfileCover({ ...user }: IProfileCoverProps) {
   return (
     <>
       <Box display="flex" mb={3}>
@@ -173,6 +173,6 @@ const ProfileCover = ({ ...user }:ProfileCoverProps) => {
       </Box>
     </>
   );
-};
+}
 
 export default ProfileCover;

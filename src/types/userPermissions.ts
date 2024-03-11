@@ -1,3 +1,1 @@
-export type UserPermissions =
-  | 'admin.roles'
-  | 'admin.users';
+export type UserPermissions = 'admin.roles' | 'admin.users';

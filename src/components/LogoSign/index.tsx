@@ -19,7 +19,6 @@ const LogoWrapper = styled(Link)(
 `
 );
 
-
 const TooltipWrapper = styled(({ className, ...props }: TooltipProps) => (
   <Tooltip {...props} classes={{ popper: className }} />
 ))(({ theme }) => ({
@@ -37,24 +36,22 @@ const TooltipWrapper = styled(({ className, ...props }: TooltipProps) => (
   },
 }));
 
-function Logo() {
+export function Logo() {
   return (
     <TooltipWrapper title="Mathew's Scrathpad" arrow>
       <LogoWrapper to="/overview">
-      <Box
-                component="img"
-                src={DaviesGroupLogo}
-                alt="Davies Group Logo"
-                width="100%"
-                sx={{
-                  maxHeight: '2.5rem',
-                  width: 'auto',
-                  height: 'auto',
-                }}
-              />
+        <Box
+          component="img"
+          src={DaviesGroupLogo}
+          alt="Davies Group Logo"
+          width="100%"
+          sx={{
+            maxHeight: '2.5rem',
+            width: 'auto',
+            height: 'auto',
+          }}
+        />
       </LogoWrapper>
     </TooltipWrapper>
   );
 }
-
-export default Logo;

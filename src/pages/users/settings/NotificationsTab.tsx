@@ -1,28 +1,28 @@
-import { useState, ChangeEvent } from 'react';
 import {
   Box,
-  Typography,
   Card,
-  Grid,
-  ListItem,
-  List,
-  ListItemText,
   Divider,
-  Switch
+  Grid,
+  List,
+  ListItem,
+  ListItemText,
+  Switch,
+  Typography,
 } from '@mui/material';
+import { ChangeEvent, useState } from 'react';
 
-function NotificationsTab() {
+export function NotificationsTab() {
   const [state, setState] = useState({
     checkedA: true,
     checkedB: false,
     checkedC: true,
-    checkedD: false
+    checkedD: false,
   });
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     setState({
       ...state,
-      [event.target.name]: event.target.checked
+      [event.target.name]: event.target.checked,
     });
   };
 
@@ -42,7 +42,7 @@ function NotificationsTab() {
                 primaryTypographyProps={{ variant: 'h5', gutterBottom: true }}
                 secondaryTypographyProps={{
                   variant: 'subtitle2',
-                  lineHeight: 1
+                  lineHeight: 1,
                 }}
                 primary="Widthdraw Activity"
                 secondary="Receive an email when a widthdrawal is made"
@@ -60,7 +60,7 @@ function NotificationsTab() {
                 primaryTypographyProps={{ variant: 'h5', gutterBottom: true }}
                 secondaryTypographyProps={{
                   variant: 'subtitle2',
-                  lineHeight: 1
+                  lineHeight: 1,
                 }}
                 primary="Weekly Report"
                 secondary="Receive account status weekly report in your inbox"
@@ -78,5 +78,3 @@ function NotificationsTab() {
     </Grid>
   );
 }
-
-export default NotificationsTab;

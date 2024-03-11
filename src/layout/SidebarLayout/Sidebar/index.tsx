@@ -1,4 +1,6 @@
-import { SidebarContext } from '@CAERPHILLY/layout/SidebarLayout/Sidebar/SidebarContext';
+import { Logo } from '@PROJECT/components/Logo';
+import { Scrollbar } from '@PROJECT/components/Scrollbar';
+import { SidebarContext } from '@PROJECT/layout/SidebarLayout/Sidebar/SidebarContext';
 import {
   Box,
   Button,
@@ -11,9 +13,7 @@ import {
   useTheme,
 } from '@mui/material';
 import { useContext } from 'react';
-import Logo from 'src/components/LogoSign';
-import Scrollbar from 'src/components/Scrollbar';
-import SidebarMenu from './SidebarMenu';
+import { SidebarMenu } from './SidebarMenu';
 
 const SidebarWrapper = styled(Box)(
   ({ theme }) => `
@@ -27,7 +27,7 @@ const SidebarWrapper = styled(Box)(
 `
 );
 
-function Sidebar() {
+export function Sidebar() {
   const { sidebarToggle, toggleSidebar } = useContext(SidebarContext);
   const closeSidebar = () => toggleSidebar();
   const theme = useTheme();
@@ -86,7 +86,7 @@ function Sidebar() {
             size="small"
             fullWidth
           >
-             v1.0 - Release Notes
+            v1.0 - Release Notes
           </Button>
         </Box>
       </SidebarWrapper>
@@ -133,5 +133,3 @@ function Sidebar() {
     </>
   );
 }
-
-export default Sidebar;

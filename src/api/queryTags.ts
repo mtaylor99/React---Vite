@@ -1,4 +1,3 @@
 export const QueryTags = {
-    WeatherForecast: 'WeatherForecast',
-  } as const;
-  
+  WeatherForecast: 'WeatherForecast',
+} as const;

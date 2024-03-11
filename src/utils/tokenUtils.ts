@@ -1,7 +1,7 @@
+import { jwtDecode } from 'jwt-decode';
 import { Profile, User } from 'oidc-client';
 import { IDecodedAccessToken } from '../types/decodedToken';
 import { UserPermissions } from '../types/userPermissions';
-import { jwtDecode } from 'jwt-decode';
 
 export const getDecodedToken = <T>(token: Nullable<string>) => {
   const decodedToken = token !== null ? jwtDecode<T>(token) : null;
@@ -45,7 +45,7 @@ export const getMockDecodedToken = (): User => {
     refresh_token: 'tst-123',
     token_type: 'Bearer',
     scope: 'API',
-    profile: { given_name: "Mathew", family_name: "Taylor" } as Profile,
+    profile: { given_name: 'Mathew', family_name: 'Taylor' } as Profile,
     expires_at: 32503680000, // 3000-01-01
     state: null,
   });

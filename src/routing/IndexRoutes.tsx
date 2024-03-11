@@ -1,8 +1,8 @@
-import AccessDeniedPage from '@CAERPHILLY/pages/error/accessdenied';
-import Status404 from '@CAERPHILLY/pages/error/status404';
-import Status500 from '@CAERPHILLY/pages/error/status500';
-import ManagementUserProfile from '@CAERPHILLY/pages/users/profile';
-import ManagementUserSettings from '@CAERPHILLY/pages/users/settings';
+import { AccessDeniedPage } from '@PROJECT/pages/error/accessdenied';
+import { Status404 } from '@PROJECT/pages/error/status404';
+import { Status500 } from '@PROJECT/pages/error/status500';
+import { ManagementUserProfile } from '@PROJECT/pages/users/profile';
+import { ManagementUserSettings } from '@PROJECT/pages/users/settings';
 import { Route, Routes } from 'react-router-dom';
 import { routePaths } from './routePaths';
 

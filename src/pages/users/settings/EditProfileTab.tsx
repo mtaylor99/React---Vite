@@ -1,19 +1,18 @@
 import {
+  Box,
+  Button,
+  Card,
+  CardContent,
+  Divider,
   Grid,
   Typography,
-  CardContent,
-  Card,
-  Box,
-  Divider,
-  Button
 } from '@mui/material';
-
-import EditTwoToneIcon from '@mui/icons-material/EditTwoTone';
+import { Label } from '@PROJECT/components/Label';
+import { Text } from '@PROJECT/components/Text';
 import DoneTwoToneIcon from '@mui/icons-material/DoneTwoTone';
-import Text from 'src/components/Text';
-import Label from 'src/components/Label';
+import EditTwoToneIcon from '@mui/icons-material/EditTwoTone';
 
-function EditProfileTab() {
+export function EditProfileTab() {
   return (
     <Grid container spacing={3}>
       <Grid item xs={12}>
@@ -193,5 +192,3 @@ function EditProfileTab() {
     </Grid>
   );
 }
-
-export default EditProfileTab;

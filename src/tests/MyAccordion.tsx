@@ -1,11 +1,12 @@
 import { Box, useTheme } from '@mui/material';
 import React from 'react';
 
-type AccordionProps = {
+interface IAccordionProps {
   title: string;
   children: React.ReactNode;
-};
-const MyAccordion = (props: AccordionProps) => {
+}
+
+export function MyAccordion(props: IAccordionProps) {
   const theme = useTheme();
   const { title, children } = props;
 
@@ -23,6 +24,4 @@ const MyAccordion = (props: AccordionProps) => {
       <div className="accordion-content">{children}</div>
     </Box>
   );
-};
-
-export default MyAccordion;
+}

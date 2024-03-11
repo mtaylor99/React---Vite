@@ -1,12 +1,12 @@
+import { Box, useTheme } from '@mui/material';
 import { ReactNode } from 'react';
 import { Scrollbars } from 'react-custom-scrollbars-2';
-import { Box, useTheme } from '@mui/material';
 
-interface ScrollbarProps {
+interface IScrollbarProps {
   children?: ReactNode;
 }
 
-const Scrollbar = ({ children, ...rest }: ScrollbarProps) => {
+export function Scrollbar({ children, ...rest }: IScrollbarProps) {
   const theme = useTheme();
 
   return (
@@ -33,6 +33,4 @@ const Scrollbar = ({ children, ...rest }: ScrollbarProps) => {
       {children}
     </Scrollbars>
   );
-};
-
-export default Scrollbar;
+}

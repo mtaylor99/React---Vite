@@ -96,7 +96,7 @@ const LogoText = styled(Box)(
 `
 );
 
-function Logo() {
+export function Logo() {
   return (
     <LogoWrapper to="/overview">
       <LogoSignWrapper>
@@ -107,7 +107,7 @@ function Logo() {
       <Box
         component="span"
         sx={{
-          display: { xs: 'none', sm: 'inline-block' }
+          display: { xs: 'none', sm: 'inline-block' },
         }}
       >
         <LogoTextWrapper>
@@ -120,5 +120,3 @@ function Logo() {
     </LogoWrapper>
   );
 }
-
-export default Logo;

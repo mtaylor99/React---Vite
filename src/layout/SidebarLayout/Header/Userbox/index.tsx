@@ -1,23 +1,23 @@
-import { useRef, useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import AccountBoxTwoToneIcon from '@mui/icons-material/AccountBoxTwoTone';
+import AccountTreeTwoToneIcon from '@mui/icons-material/AccountTreeTwoTone';
+import ExpandMoreTwoToneIcon from '@mui/icons-material/ExpandMoreTwoTone';
+import LockOpenTwoToneIcon from '@mui/icons-material/LockOpenTwoTone';
 import {
   Avatar,
   Box,
   Button,
   Divider,
   Hidden,
-  lighten,
   List,
   ListItem,
   ListItemText,
   Popover,
-  Typography
+  Typography,
+  lighten,
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import ExpandMoreTwoToneIcon from '@mui/icons-material/ExpandMoreTwoTone';
-import AccountBoxTwoToneIcon from '@mui/icons-material/AccountBoxTwoTone';
-import LockOpenTwoToneIcon from '@mui/icons-material/LockOpenTwoTone';
-import AccountTreeTwoToneIcon from '@mui/icons-material/AccountTreeTwoTone';
+import { useRef, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const UserBoxButton = styled(Button)(
   ({ theme }) => `
@@ -54,11 +54,11 @@ const UserBoxDescription = styled(Typography)(
 `
 );
 
-function HeaderUserbox() {
+export function HeaderUserbox() {
   const user = {
     name: 'Mathew Taylor',
     avatar: '/static/images/avatars/1.jpg',
-    jobtitle: 'Web Developer'
+    jobtitle: 'Web Developer',
   };
 
   const ref = useRef<HTMLButtonElement>(null);
@@ -94,11 +94,11 @@ function HeaderUserbox() {
         open={isOpen}
         anchorOrigin={{
           vertical: 'top',
-          horizontal: 'right'
+          horizontal: 'right',
         }}
         transformOrigin={{
           vertical: 'top',
-          horizontal: 'right'
+          horizontal: 'right',
         }}
       >
         <MenuUserBox sx={{ minWidth: 210 }} display="flex">
@@ -136,5 +136,3 @@ function HeaderUserbox() {
     </>
   );
 }
-
-export default HeaderUserbox;

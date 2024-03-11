@@ -1,3 +1,4 @@
+import NotificationsActiveTwoToneIcon from '@mui/icons-material/NotificationsActiveTwoTone';
 import {
   alpha,
   Badge,
@@ -8,12 +9,11 @@ import {
   ListItem,
   Popover,
   Tooltip,
-  Typography
+  Typography,
 } from '@mui/material';
-import { useRef, useState } from 'react';
-import NotificationsActiveTwoToneIcon from '@mui/icons-material/NotificationsActiveTwoTone';
 import { styled } from '@mui/material/styles';
 import { formatDistance, subDays } from 'date-fns';
+import { useRef, useState } from 'react';
 
 const NotificationsBadge = styled(Badge)(
   ({ theme }) => `
@@ -39,7 +39,7 @@ const NotificationsBadge = styled(Badge)(
 `
 );
 
-function HeaderNotifications() {
+export function HeaderNotifications() {
   const ref = useRef<HTMLButtonElement>(null);
   const [isOpen, setOpen] = useState<boolean>(false);
 
@@ -59,7 +59,7 @@ function HeaderNotifications() {
             badgeContent={1}
             anchorOrigin={{
               vertical: 'top',
-              horizontal: 'right'
+              horizontal: 'right',
             }}
           >
             <NotificationsActiveTwoToneIcon />
@@ -72,11 +72,11 @@ function HeaderNotifications() {
         open={isOpen}
         anchorOrigin={{
           vertical: 'top',
-          horizontal: 'right'
+          horizontal: 'right',
         }}
         transformOrigin={{
           vertical: 'top',
-          horizontal: 'right'
+          horizontal: 'right',
         }}
       >
         <Box
@@ -99,7 +99,7 @@ function HeaderNotifications() {
                 </Typography>
                 <Typography variant="caption" sx={{ textTransform: 'none' }}>
                   {formatDistance(subDays(new Date(), 3), new Date(), {
-                    addSuffix: true
+                    addSuffix: true,
                   })}
                 </Typography>
               </Box>
@@ -118,5 +118,3 @@ function HeaderNotifications() {
     </>
   );
 }
-
-export default HeaderNotifications;

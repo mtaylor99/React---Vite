@@ -1,8 +1,8 @@
 import { Box } from '@mui/material';
-import HeaderSearch from './Search';
-import HeaderNotifications from './Notifications';
+import { HeaderNotifications } from './Notifications';
+import { HeaderSearch } from './Search';
 
-function HeaderButtons() {
+export function HeaderButtons() {
   return (
     <Box sx={{ mr: 1 }}>
       <HeaderSearch />
@@ -12,5 +12,3 @@ function HeaderButtons() {
     </Box>
   );
 }
-
-export default HeaderButtons;

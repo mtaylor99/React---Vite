@@ -1,4 +1,4 @@
-import { defineConfig } from "cypress";
+import { defineConfig } from 'cypress';
 
 export default defineConfig({
   e2e: {
@@ -7,9 +7,9 @@ export default defineConfig({
     },
   },
   env: {
-    app_url: "http://127.0.0.1:3000",
-    idp_domain: "https://localhost:5001",
-    idp_username: "mathew.taylor",
-    idp_password: "Password1!",
+    app_url: 'http://127.0.0.1:3000',
+    idp_domain: 'https://localhost:5001',
+    idp_username: 'mathew.taylor',
+    idp_password: 'Password1!',
   },
 });

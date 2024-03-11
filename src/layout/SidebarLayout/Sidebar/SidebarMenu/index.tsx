@@ -1,4 +1,4 @@
-import { SidebarContext } from '@CAERPHILLY/layout/SidebarLayout/Sidebar/SidebarContext';
+import { SidebarContext } from '@PROJECT/layout/SidebarLayout/Sidebar/SidebarContext';
 import AccountCircleTwoToneIcon from '@mui/icons-material/AccountCircleTwoTone';
 import BrightnessLowTwoToneIcon from '@mui/icons-material/BrightnessLowTwoTone';
 import CameraFrontTwoToneIcon from '@mui/icons-material/CameraFrontTwoTone';
@@ -159,7 +159,7 @@ const SubMenuWrapper = styled(Box)(
 `
 );
 
-function SidebarMenu() {
+export function SidebarMenu() {
   const { closeSidebar } = useContext(SidebarContext);
 
   return (
@@ -252,7 +252,7 @@ function SidebarMenu() {
         >
           <SubMenuWrapper>
             <List component="div">
-            <ListItem component="div">
+              <ListItem component="div">
                 <Button
                   disableRipple
                   component={RouterLink}
@@ -292,5 +292,3 @@ function SidebarMenu() {
     </>
   );
 }
-
-export default SidebarMenu;

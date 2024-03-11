@@ -1,9 +1,9 @@
 import { Typography } from '@mui/material';
 
-function PageHeader() {
+export function PageHeader() {
   const user = {
     name: 'Mathew Taylor',
-    avatar: '/static/images/avatars/1.jpg'
+    avatar: '/static/images/avatars/1.jpg',
   };
 
   return (
@@ -17,5 +17,3 @@ function PageHeader() {
     </>
   );
 }
-
-export default PageHeader;

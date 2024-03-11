@@ -15,7 +15,7 @@ const MainContent = styled(Box)(
 `
 );
 
-function AccessDeniedPage() {
+export function AccessDeniedPage() {
   return (
     <>
       <MainContent>
@@ -42,5 +42,3 @@ function AccessDeniedPage() {
     </>
   );
 }
-
-export default AccessDeniedPage;

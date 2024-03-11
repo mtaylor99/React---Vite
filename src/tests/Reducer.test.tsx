@@ -1,5 +1,8 @@
 import { describe, expect, test } from 'vitest';
-import { decrementNotifications, incrementNotifications } from '../state/slices/applicationSlice';
+import {
+  decrementNotifications,
+  incrementNotifications,
+} from '../state/slices/applicationSlice';
 import { configureReduxStore } from '../state/store';
 
 describe('With React Testing Library', () => {
@@ -26,7 +29,9 @@ describe('With React Testing Library', () => {
     await store.dispatch(incrementNotifications());
 
     applicationState = store.getState().application;
-    expect(applicationState.notifications).toBeGreaterThan(initialNotificationsCount);
+    expect(applicationState.notifications).toBeGreaterThan(
+      initialNotificationsCount
+    );
     expect(applicationState.notifications).toEqual(2);
   });
 

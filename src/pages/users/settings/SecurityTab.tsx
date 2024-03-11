@@ -1,3 +1,5 @@
+import { AppContext } from '@PROJECT/AuthContext';
+import DeleteTwoToneIcon from '@mui/icons-material/DeleteTwoTone';
 import {
   Box,
   Button,
@@ -21,13 +23,10 @@ import {
   Typography,
   useTheme,
 } from '@mui/material';
+import { format, subDays, subHours, subWeeks } from 'date-fns';
 import { ChangeEvent, MouseEvent, useState } from 'react';
 
-import DeleteTwoToneIcon from '@mui/icons-material/DeleteTwoTone';
-import { format, subDays, subHours, subWeeks } from 'date-fns';
-import { AppContext } from '@CAERPHILLY/AuthContext';
-
-function SecurityTab() {
+export function SecurityTab() {
   const theme = useTheme();
 
   const [page, setPage] = useState(2);
@@ -192,5 +191,3 @@ function SecurityTab() {
     </Grid>
   );
 }
-
-export default SecurityTab;

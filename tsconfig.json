@@ -22,7 +22,7 @@
     /* Folder Management */
     "baseUrl": ".",
     "paths": {
-      "@CAERPHILLY/*": ["src/*"]
+      "@PROJECT/*": ["src/*"]
     }
   },
   //@ts-nocheck

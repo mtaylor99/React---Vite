@@ -1,9 +1,8 @@
-import { FC, ReactNode } from 'react';
-import PropTypes from 'prop-types';
 import { styled } from '@mui/material/styles';
 import clsx from 'clsx';
+import { ReactNode } from 'react';
 
-interface TextProps {
+interface ITextProps {
   className?: string;
   color?:
     | 'primary'
@@ -59,12 +58,12 @@ const TextWrapper = styled('span')(
 `
 );
 
-const Text: FC<TextProps> = ({
+export function Text({
   color = 'secondary',
   flex,
   children,
   ...rest
-}) => {
+}: ITextProps) {
   return (
     <TextWrapper
       className={clsx('MuiText-' + color, { flexItem: flex })}
@@ -73,20 +72,4 @@ const Text: FC<TextProps> = ({
       {children}
     </TextWrapper>
   );
-};
-
-Text.propTypes = {
-  children: PropTypes.node,
-  className: PropTypes.string,
-  color: PropTypes.oneOf([
-    'primary',
-    'secondary',
-    'error',
-    'warning',
-    'success',
-    'info',
-    'black'
-  ])
-};
-
-export default Text;
+}

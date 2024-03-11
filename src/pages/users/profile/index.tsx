@@ -1,12 +1,12 @@
 import { Container, Grid, Typography } from '@mui/material';
-import Addresses from './Addresses';
-import Feed from './Feed';
-import MyCards from './MyCards';
-import PopularTags from './PopularTags';
+import { Addresses } from './Addresses';
+import { Feed } from './Feed';
+import { MyCards } from './MyCards';
+import { PopularTags } from './PopularTags';
 import ProfileCover from './ProfileCover';
-import RecentActivity from './RecentActivity';
+import { RecentActivity } from './RecentActivity';
 
-function ManagementUserProfile() {
+export function ManagementUserProfile() {
   const user = {
     savedCards: 7,
     name: 'Catherine Pike',
@@ -53,5 +53,3 @@ function ManagementUserProfile() {
     </>
   );
 }
-
-export default ManagementUserProfile;

@@ -1,19 +1,19 @@
 import {
   Box,
   Button,
-  Typography,
   Card,
   CardHeader,
   Divider,
-  Grid
+  Grid,
+  Typography,
 } from '@mui/material';
 
 import { ArrowForwardTwoTone } from '@mui/icons-material';
 
-function Addresses() {
+export function Addresses() {
   const addresses = {
     delivery: 12,
-    shipping: 8
+    shipping: 8,
   };
 
   return (
@@ -87,5 +87,3 @@ function Addresses() {
     </Grid>
   );
 }
-
-export default Addresses;

@@ -1,4 +1,4 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 export interface ApplicationState {
   notifications: number;
@@ -9,13 +9,13 @@ const initialState: ApplicationState = {
 };
 
 export const applicationSlice = createSlice({
-  name: "application",
+  name: 'application',
   initialState,
   reducers: {
-    incrementNotifications: (state) => {
+    incrementNotifications: state => {
       state.notifications += 1;
     },
-    decrementNotifications: (state) => {
+    decrementNotifications: state => {
       state.notifications -= 1;
     },
     incrementNotificationsByAmount: (state, action: PayloadAction<number>) => {
@@ -24,6 +24,10 @@ export const applicationSlice = createSlice({
   },
 });
 
-export const { incrementNotifications, decrementNotifications, incrementNotificationsByAmount } = applicationSlice.actions;
+export const {
+  incrementNotifications,
+  decrementNotifications,
+  incrementNotificationsByAmount,
+} = applicationSlice.actions;
 
 export const applicationReducer = applicationSlice.reducer;

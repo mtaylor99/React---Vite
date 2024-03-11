@@ -5,12 +5,12 @@ import {
   ThunkAction,
   configureStore,
 } from '@reduxjs/toolkit';
+import { setupListeners } from '@reduxjs/toolkit/query';
 import { weatherForecastApi } from '../api/weatherForecaseApi';
 import {
   ApplicationState,
   applicationReducer,
 } from './slices/applicationSlice';
-import { setupListeners } from '@reduxjs/toolkit/query';
 
 export interface IReducer {
   application: Reducer<ApplicationState, AnyAction>;
